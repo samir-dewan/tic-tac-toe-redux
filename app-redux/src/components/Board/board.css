@@ -1,0 +1,19 @@
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 84rem;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .board {width: 36rem;}
+}
+/*styling for historic game boards*/
+.notMainBoard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 13rem;
+    justify-content: center;
+    margin: 0 auto;
+}

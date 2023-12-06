@@ -1,0 +1,84 @@
+.namesContainer {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: #2f8ca3;
+}
+
+.nameInput {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+    width: 16rem;
+}
+
+.nameTitle {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.nameInputContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.nameContainer {
+    display: flex;
+    width: 30rem;
+    height: 10rem;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    border: 2px solid #193f4a;
+    border-radius: 1rem;
+    margin: 7.5rem;
+}
+
+.inputtedName {
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 4.5rem;
+}
+
+.XOString {
+    font-size: 48rem;
+    line-height: 36rem;
+}
+
+.XOStringContainer {
+    width: 100%;
+    overflow: hidden;
+}
+
+.animated-loop {
+    animation: rotate 3s linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+  }
+
+@media (max-width: 768px), (max-height: 540px) {
+    .XOString {
+        font-size: 24rem;
+        line-height: 18rem;
+    }
+
+    .nameContainer {
+        padding: 1rem;
+        margin: 1rem;
+    }
+}

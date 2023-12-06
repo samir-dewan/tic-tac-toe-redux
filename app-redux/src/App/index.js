@@ -1,16 +1,12 @@
 import React, {Component} from "react";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
-
 import {Provider} from "react-redux";
 import {applyMiddleware, createStore} from 'redux';
 import {rootReducer} from '../redux';
 import logger from "redux-logger";
-
-
-import ShowStore from '../components/ShowStore'
-import Game from '../containers/Game'
-import AppHeader from './AppHeader';
+import Game from '../containers/Game';
+import Home from '../containers/Home';
 import './app.css';
 
 
@@ -25,13 +21,14 @@ class App extends Component {
         return (
             <Provider store={store}>
                 <Router>
-                    <div className="App container">
-                        <AppHeader/>
                         <Switch>
-                            <Route path="/" exact component={Game}/>
+                            <Route path="/" exact>
+                                <Home />    
+                            </Route>
+                            <Route path="/game" exact>
+                                <Game />    
+                            </Route>
                         </Switch>
-                        <ShowStore/>
-                    </div>
                 </Router>
             </Provider>
         );

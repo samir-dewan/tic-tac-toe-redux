@@ -1,0 +1,59 @@
+/*styling for standard squares*/
+.square {
+  background: #193f4a;
+  border: 1px solid #030504;
+  color: #fffffe;
+  font-size: 27rem;
+  font-weight: bold;
+  line-height: 28rem;
+  height: 28rem;
+  text-align: center;
+  width: 28rem;
+  transition: background 0.5s ease;
+}
+
+/*styling for winning squares*/
+.winningSquare {
+  background: #f4af2d;
+  border: 2px solid #193f4a;
+  font-size: 29rem;
+  font-weight: bolder;
+  line-height: 28rem;
+  height: 28rem;
+  text-align: center;
+  width: 28rem;
+  transition: background 1s ease;
+}
+
+/*styling for historic grids */
+.notMainSquare {
+  background: #fff;
+  border: 1px solid #999;
+  font-size: 3rem;
+  font-weight: normal;
+  text-align: center;
+  line-height: 3.5rem;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.square:hover {
+  background: #2f8ca3;
+  transition-duration: 0.5s;
+}
+
+@media (max-width: 768px) {
+  .square {
+    font-size: 11rem;
+    width: 12rem;
+    height: 12rem;
+    line-height: 12rem;
+  }
+
+  .winningSquare {
+    font-size: 13rem;
+    width: 12rem;
+    height: 12rem;
+    line-height: 12rem;
+  }
+}

@@ -1,0 +1,135 @@
+.versusContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #193f4a;
+    border: 2px solid #2f8ca3;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+.gameContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 0.75rem;
+    padding-top: 0.75rem;
+    background-color: black;
+}
+
+.playerName {
+    font-size: 2.75rem;
+    overflow: hidden;
+    max-width: 14rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+}
+
+.playerScore {
+    font-size: 1.5rem;
+}
+
+.playerContainer {
+    display: flex;
+    width: 17rem;
+    padding: 0 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    margin: 0 1rem;
+}
+
+.gameHistory {
+    margin: 2rem 1rem;
+    width: 56rem; 
+    align-self: center;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    align-content: flex-start;
+}
+
+.playAgainButton {
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    background-color: #e0e8ff;
+    padding: 0.5rem;
+}
+
+.playAgainButton:hover {
+    font-size: 2.2rem;
+    background-color: #d0d8ff;
+}
+
+.historicBoard {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    border:#d0d8ff solid 1px;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20%;
+    height: 18rem;
+    width: 17rem;
+}
+
+.historicBoardDescriptor {
+    margin: 0;
+    padding: 0.5rem 0.4rem;
+    background-color: #2f8ca3;
+    border-radius: 1rem;
+}
+
+.detailContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #193f4a;
+    width: 64rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+.historyTitle {
+    color: aliceblue;
+    margin: 0 auto;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.historyTitleContainer {
+    border: solid 1px #2f8ca3;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    padding: 0.5rem 0;
+}
+.statusContainer {
+    background: aliceblue;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .gameContainer {
+        flex-direction: column-reverse;
+    }
+
+    .detailContainer {
+        width: 55rem;
+        align-self: center;
+        margin-top: 1rem;
+    }
+
+    .gameHistory {
+        width: 36rem;
+        align-self: center;
+        min-height: 15rem;
+    }
+}
